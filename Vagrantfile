@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-a = []
+
 config.vm.define "web", primary:true do |web|
   web.vm.box	="puppetlabs/ubuntu-14.04-32-nocm"
   web.vm.network	"forwarded_port",	guest:80,	host:8888
